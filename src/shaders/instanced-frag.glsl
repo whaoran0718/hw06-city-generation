@@ -14,7 +14,7 @@ out vec4 out_Col;
 
 float shadow() {
   vec3 shadowCoord = fs_ShadowCoord.xyz /fs_ShadowCoord.w;
-  shadowCoord.z -= 0.0025;
+  shadowCoord.z -= 0.003;
   return texture(u_Shadow, shadowCoord);
 }
 
